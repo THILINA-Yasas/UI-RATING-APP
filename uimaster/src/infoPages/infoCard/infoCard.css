@@ -1,0 +1,96 @@
+.infocd {
+    width: 95%;
+    height: 12vw;
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+    margin: 1vw;
+    cursor: none;
+    transition:  0.29s ease-in-out;
+  }
+
+  .expand{
+    max-height: 500px;
+    transition: max-height 1s ease-out;
+  }
+
+  .collaps{
+    max-height: 300px;
+    transition: max-height 1s ease-in;
+  }
+
+  .infocd0 {
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    
+  }
+
+  .infocd0:hover{
+    transform: scale(1.01);
+  }
+
+
+  .infocd01{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infocd02{
+    height: 53%;
+    overflow-y: hidden
+  }
+
+  .infocd03{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw
+  }
+
+  .infocd03 img{
+    height: 10vw;
+    width: 13vw;
+    border-radius: 0.4vw;
+    margin: 1vw 0 0 0;
+  }
+
+  .infocd04{
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0 1% 0;
+  }
+
+  .infocd04 p{
+   margin: 0;
+   color: white;
+   font-weight: 600;
+  }
+
+  .infocd04 a{
+    margin-left: 1%;
+    margin-bottom: 1px;
+    font-weight: 500;
+  }
+  
+  #infotxt {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: 0 0 1vw 0;
+  }
+
+  #infoPar {
+    color: white;
+    font-size: 1vw;
+    font-weight: 400;
+    margin: 0;
+    white-space:pre-wrap;
+    text-align: justify;
+  }
+  
+  .infocd:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }

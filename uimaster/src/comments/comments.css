@@ -1,0 +1,30 @@
+.designbot3 {
+  width: 80%;
+  height: 60%;
+}
+
+.designcomments {
+  height: 97%;
+  width: 100%;
+  border-radius: 0.6vw;
+  border: #d66a1c solid 0.2vw;
+  overflow-y: scroll;
+}
+
+.designcomments::-webkit-scrollbar {
+  width: 0.8vw;
+  background-color: transparent;
+  border: #d66a1c solid 0.1vw;
+  z-index: 2;
+}
+.designcomments::-webkit-scrollbar-thumb {
+  background-color: #d66a1c;
+}
+
+.designcomments_loading{
+   display: flex;
+   justify-content: center;
+   height: 100%;
+   align-items: center;
+   color: white;
+}

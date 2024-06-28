@@ -1,0 +1,15 @@
+.cmmntCrd01{
+    color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 20px; 
+}
+
+.cmmntCrdP01{
+    font-weight: 600;
+    font-size: medium;
+    color: rgb(239, 164, 110);
+}
+
+.cmmntCrdP02{
+    font-weight: 400;
+    font-size: large;
+}
