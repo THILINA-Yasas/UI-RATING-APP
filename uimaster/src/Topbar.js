@@ -18,6 +18,7 @@ function Topbar({ props }) {
 
   return (
     <div className="TopSection">
+      npm start
       <div className="topbar">
         <div className="searchhere">
           <div className="searchheretxt">

@@ -53,9 +53,9 @@ function Sidebar() {
             active={location.pathname.includes("updesign")}
           />
         </div>
-        <div className="sidebar14">
+        <div className="sidebar14" style={{ color: "chocolate" }}>
           <Sidebarrow
-            name="UI Standered"
+            name="UI Standard"
             url="info"
             icon={<InfoRoundedIcon fontSize="inherit" />}
             active={location.pathname.includes("info")}
