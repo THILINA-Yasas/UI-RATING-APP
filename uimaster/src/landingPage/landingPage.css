@@ -5,6 +5,10 @@
     
 }
 
+.titles img {
+    width: 6vw;
+}
+
 h1{
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

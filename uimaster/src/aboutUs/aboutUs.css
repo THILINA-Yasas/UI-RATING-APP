@@ -1,0 +1,39 @@
+.abt {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.abt1 {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.abt1 h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.abt1 p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.abt2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.abt2 img {
+  width: 60%;
+  height: 60%;
+}

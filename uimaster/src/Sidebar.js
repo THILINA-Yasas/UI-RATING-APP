@@ -9,6 +9,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import CloudUploadOutlinedIcon from "@mui/icons-material/CloudUploadOutlined";
 import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
 import logo from "./images/lOGO.png";
+import UiMasterLogo from "./images/ui_master_logo.jpg"
 import { useLocation } from "react-router-dom";
 
 function Sidebar() {
@@ -18,7 +19,7 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar1">
         <div className="sidebar11">
-          <img src={logo} alt={logo} id="lglg" />
+          <img src={UiMasterLogo} alt={logo} id="lglg" />
         </div>
         <div className="sidebar12">
           <Sidebarrow

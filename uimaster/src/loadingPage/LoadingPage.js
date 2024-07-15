@@ -9,7 +9,9 @@ function LoadingPage({ props }) {
     if (
       location.pathname.includes("categories") ||
       location.pathname.includes("updesign") ||
-      location.pathname.includes("info")
+      location.pathname.includes("info") ||
+      location.pathname.includes("aboutus") ||
+      location.pathname.includes("contactus")
     ) {
       props.handelLoadingPage(false);
     } else {

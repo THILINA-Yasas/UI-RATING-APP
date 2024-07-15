@@ -20,7 +20,7 @@ function Home() {
   useEffect(() => {
     const fetchTopThreeDesigns = async (maxLimit) => {
       setLoading(true);
-      handelLoadingPage(true)
+      handelLoadingPage(true);
       setError(false);
       const designRef = collection(db, "designs");
       const q = query(designRef, orderBy("rating", "desc"), limit(maxLimit));
@@ -34,7 +34,7 @@ function Home() {
           setDesigns(data);
           setDesignSearch(data);
           setLoading(false);
-          handelLoadingPage(false)
+          handelLoadingPage(false);
         })
         .catch((err) => {
           console.log(err);
@@ -85,8 +85,8 @@ function Home() {
                   </h1>
                   <p style={{ margin: "0" }}>
                     {location.pathname.includes("/ratings")
-                      ? "Eplore Most Rated Designs"
-                      : "Explore Latest UI Designs and give value for them"}
+                      ? "Explore Most Rated Designs"
+                      : "Latest UI Designs and give value for them"}
                   </p>
                 </div>
               </div>

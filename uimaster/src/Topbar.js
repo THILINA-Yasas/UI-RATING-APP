@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ProfileCard from "./profileCard/ProfileCard";
@@ -11,6 +11,7 @@ function Topbar({ props }) {
   const user = useSelector(selectUser);
   const [searchText, setSearchText] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     if (props) props.handelSearch(searchText);
@@ -48,16 +49,44 @@ function Topbar({ props }) {
           <Link
             to="/home"
             className="topbartxt"
-            style={{ textDecoration: "none" }}
+            style={{
+              textDecoration: "none",
+              color: location.pathname.includes("home") && "chocolate",
+            }}
           >
             Home
           </Link>
           <Link
             to="/categories"
             className="topbartxt"
-            style={{ textDecoration: "none" }}
+            style={{
+              textDecoration: "none",
+              color: location.pathname.includes("categories") && "chocolate",
+            }}
           >
             All Designs
+          </Link>
+
+          <Link
+            to="/aboutus"
+            className="topbartxt"
+            style={{
+              textDecoration: "none",
+              color: location.pathname.includes("aboutus") && "chocolate",
+            }}
+          >
+            About Us
+          </Link>
+
+          <Link
+            to="/contactus"
+            className="topbartxt"
+            style={{
+              textDecoration: "none",
+              color: location.pathname.includes("contactus") && "chocolate",
+            }}
+          >
+            Contact Us
           </Link>
 
           {/* <Link

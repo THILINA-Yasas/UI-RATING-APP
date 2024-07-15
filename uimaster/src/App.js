@@ -35,6 +35,8 @@ function App() {
           <Route path="designs/:id" element={<Designs />} />
           <Route path="info" element={<Main page="Info" />} />
           <Route path="ratings" element={<Main page="home" />} />
+          <Route path="aboutus" element={<Main page="aboutus" />} />
+          <Route path="contactus" element={<Main page="contactus" />} />
         </Route>
         <Route path="*" element={<Navigate to={"/home"} />} />
       </Routes>

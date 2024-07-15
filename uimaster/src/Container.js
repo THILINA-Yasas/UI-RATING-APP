@@ -5,6 +5,8 @@ import Categories from "./Categories";
 import Activity from "./Activity";
 import Updesign from "./Updesign";
 import Info from "./infoPages/info/Info";
+import AboutUs from "./aboutUs/AboutUs";
+import ContactUs from "./contactUs/ContactUs"
 
 function Container({ page, name }) {
   if (page === "home") {
@@ -35,6 +37,20 @@ function Container({ page, name }) {
     return (
       <div className="container">
         <Info />
+      </div>
+    );
+  }
+  else if (page === "aboutus") {
+    return (
+      <div className="container">
+        <AboutUs />
+      </div>
+    );
+  }
+  else if (page === "contactus") {
+    return (
+      <div className="container">
+        <ContactUs />
       </div>
     );
   }
